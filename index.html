@@ -22,14 +22,15 @@
             <div class="card-body">
               <h5 class="card-title text-center">🤑Valuta váltó🤑</h5>
               <label for="osszeg" class="card-text text-start">Összeg (HUF)</label> <br>
-              <input type="number">
-              <label for="" class="card-text">Cél valuta</label> <br>
+              <input type="number" id="osszeg">
+              <label for="lista" class="card-text">Cél valuta</label> <br>
               <select name="lista" id="lista">
                 <option value="EUR">EUR</option>
                 <option value="USD">USD</option>
                 <option value="GBP">GBP</option>
               </select>
-              <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary m-2 text-center">Átváltás</a></div> 
+              <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary m-2 text-center" onclick="atvaltas()">Átváltás</a></div> 
+              <div class="d-flex justify-content-center align-items-center bg-success-subtle mt-2 pt-3 rounded-3" id="osszegDiv"><p id="vegOsszeg"></p></div>
             </div>
           </div>
 
